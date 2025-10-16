@@ -1,3 +1,9 @@
+def findfirst(binarylist):
+    for x in range (len(binarylist)):
+        if (binarylist[x][2] == ''):
+            return binarylist[x]
+        return None 
+            
 binarylist = [
     ['1', '9:00', '5877RC'],
     ['2', '9:30', '9655AS'],
@@ -10,5 +16,7 @@ binarylist = [
     ['9', '14:00', '9874PL', ''],
     ['10', '14:30', '9658SV']]
 
-print(binarylist[2][1])
+result = findfirst(binarylist)
+
+print(f'first empty fields: {result}')
 
